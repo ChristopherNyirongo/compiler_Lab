@@ -1,18 +1,31 @@
-## Getting Started
+# Compiler Lab Project
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+## Description
+This project is a **Java-based compiler lab** designed to help students understand the principles of lexical analysis, parsing, and intermediate code generation.  
+It includes a lexer, parser, symbol table management, and three-address code generation for simple arithmetic expressions.
 
-## Folder Structure
+---
 
-The workspace contains two folders by default, where:
+## Features
+- **Lexer**: Breaks input strings into tokens.
+- **Parser**: Checks syntax and generates parse trees.
+- **Symbol Table**: Tracks variable names and values.
+- **Three-Address Code (TAC)**: Generates intermediate representation for expressions.
+- **Error Handling**: Detects invalid syntax and unexpected tokens.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+---
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+## Files in this Repository
+- `Main.java` – Entry point of the program
+- `Lexer.java` – Tokenizer for input expressions
+- `Parser.java` – Syntax analyzer and TAC generator
+- Other Java files – Support classes for symbol table and code management
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+---
 
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+## How to Run
+1. Make sure you have **Java JDK** installed.
+2. Open the project folder in **VS Code** or any IDE.
+3. Compile the Java files:
+   ```bash
+   javac *.java
